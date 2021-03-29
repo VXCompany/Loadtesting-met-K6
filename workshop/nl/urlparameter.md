@@ -51,4 +51,20 @@ $env:BASEURL='https://relaxing-meerkat-aks.westeurope.cloudapp.azure.com'
 k6 cloud -e BASEURL=$env:BASEURL url.js
 ```
 
+## Uitvoeren test
+
+Vervolgens voeren wij de test uit. Je kunt dit lokaal doen en naar de K6 Cloud rapporteren of de gehele test in de K6 Cloud uitvoeren:
+
+```bash
+# Lokaal draaien en rapporteren naar de cloud
+k6 run scenario.js -o cloud
+
+# In de K6 cloud uitvoeren
+k6 cloud scenario.js
+```
+
+Navigeer naar https://app.k6.io/projects/3531475 en controleer of ook deze resultaten in de app zijn verwerkt.
+
+[Terug naar het Workshop Script](handson.md)
+
 

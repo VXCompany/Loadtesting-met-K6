@@ -73,7 +73,7 @@ k6 run scenario.js -o cloud
 k6 cloud scenario.js
 ```
 
-Dit durt natuurlijk iets langer: 1 minuut voor de test en maximaal 30 seconden voor het netjes afbouwen aan het eind. Navigeer naar https://app.k6.io/projects/3531475 en controleer of ook deze resultaten in de app zijn verwerkt:
+Navigeer naar https://app.k6.io/projects/3531475 en controleer of ook deze resultaten in de app zijn verwerkt.
 
 
 [Terug naar het Workshop Script](handson.md)
