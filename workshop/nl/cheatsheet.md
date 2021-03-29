@@ -62,7 +62,7 @@ export let options = {
 
 ### Stages
 
-- stages: meerdere stages vooor een bepaald patroon (target = het aantal VU's)
+- stages: meerdere stages voor een bepaald patroon (target = het aantal VU's)
 
 ```javascript
 export let options = {
