@@ -8,7 +8,7 @@ Maak bijvoorbeeld het volgende script (noem het "url.js"), pas daarbij je initia
 
 ```javascript
 import http from 'k6/http';
-import { sleep } from 'k6';
+import { sleep } from 'k6'; 
 
 export let options = {
   vus: 10,

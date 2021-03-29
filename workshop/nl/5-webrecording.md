@@ -57,16 +57,16 @@ Wanneer je de zojuist gemaakte stap5.js in een editor (Visual Studio Code, Notep
 In het bestand komen verschillende "sleep" commando's voor. Dit is de tijd die gewacht is tussen de verschillende acties (het klikken op de Login, Clear en Favorite knop in de app). In plaats van verschillende tijden te pakken, nemen we hier nu voor alle wachttijden 2 seconden op. Pas het bestand zo aan, dat alle sleep commando's 2 seconden zijn:
 
 ```javascript
-...
+//...
 
-		res = http.batch(req);
-		sleep(2);
-		req = [{
-			"method": "get",
-			"url": "https://relaxing-meerkat-aks.westeurope.cloudapp.azure.com/api/candidates/match",
-			"params": {
+res = http.batch(req);
+sleep(2);
+req = [{
+  "method": "get",
+  "url": "https://relaxing-meerkat-aks.westeurope.cloudapp.azure.com/api/candidates/match",
+  "params": {
 
-...
+//...
 ```
 
 ## Opties toevoegen
@@ -75,21 +75,21 @@ Net als bij eerdere test scripts, passen we bepaalde opties toe. Vul ook hier bi
 
 ```javascript
 export let options = {
-    maxRedirects: 0,
-		vus: 10,
-		duration: '30s',
-		ext: {
-			loadimpact: {
-				projectID: 3531475,
-				name: "Stap 5: [initialen]",
-        distribution: {
-          'amazon:de:frankfurt': {
-            loadZone: 'amazon:de:frankfurt',
-            percent: 100
-          }
+  maxRedirects: 0,
+  vus: 10,
+  duration: '30s',
+  ext: {
+    loadimpact: {
+      projectID: 3531475,
+      name: "Stap 5: [initialen]",
+      distribution: {
+        'amazon:de:frankfurt': {
+          loadZone: 'amazon:de:frankfurt',
+          percent: 100
         }
-			}
-		}
+      }
+    }
+  }
 };
 ```
 

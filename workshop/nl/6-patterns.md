@@ -12,25 +12,25 @@ Zorg er voor, dat het options blok de volgende configuratie bevat en vul ook hie
 
 ```javascript
 export let options = {
-    maxRedirects: 0,
-		ext: {
-			loadimpact: {
-				projectID: 3531475,
-				name: "Stap 5: [initialen]",
-        distribution: {
-          'amazon:de:frankfurt': {
-            loadZone: 'amazon:de:frankfurt',
-            percent: 100
-          }
+  maxRedirects: 0,
+  ext: {
+    loadimpact: {
+      projectID: 3531475,
+      name: "Stap 5: [initialen]",
+      distribution: {
+        'amazon:de:frankfurt': {
+          loadZone: 'amazon:de:frankfurt',
+          percent: 100
         }
-			}
-		},
-    stages: [
-      { duration: '10s', target: 10 }, 
-      { duration: '20s', target: 50 }, 
-      { duration: '30s', target: 0 }, 
-    ],
-    discardResponseBodies: true
+      }
+    }
+  },
+  stages: [
+    { duration: '10s', target: 10 }, 
+    { duration: '20s', target: 50 }, 
+    { duration: '30s', target: 0 }, 
+  ],
+  discardResponseBodies: true
 };
 ```
 

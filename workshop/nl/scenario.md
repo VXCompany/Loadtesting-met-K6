@@ -5,7 +5,7 @@
 Scenario's bieden de mogelijkheid om meerdere patronen te combineren. Je kunt je voorstellen, dat je bijvoorbeeld voor verschillende doelgroepen aparte patronen maakt. 
 Meer info: https://k6.io/docs/using-k6/scenarios
 
-Maak een nieuwe file (noem het "scenario.js") en neem deze inhoud over, pas daarbij je initialen aan:
+Maak een nieuwe file (noem het "scenario.js") en neem deze inhoud over, pas daarbij je initialen aan: 
 
 ```javascript
 import http from 'k6/http';
