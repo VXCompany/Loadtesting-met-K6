@@ -43,7 +43,6 @@ export let options = {
       maxDuration: '1m',
     },
   },
-
 };
 
 export function visitors() {
