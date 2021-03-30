@@ -5,7 +5,7 @@
 Om nu de testrun niet meer lokaal te draaien, maar direct vanuit de cloud hoeven we niets meer aan te passen. Het volgende commando regelt alles wat nodig is:
 
 ```bash
-k6 cloud script.js
+k6 cloud stap3.js
 ```
 
 In dit geval krijgen we geen "end-of-test" summary, daar zullen we voor naar de app moeten gaan. 

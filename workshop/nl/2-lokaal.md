@@ -14,12 +14,12 @@ export default function () {
 }
 ```
 
-En sla het op als "script.js".
+En sla het op als "stap2.js".
 
 Voer daarna de test uit:
 
 ```bash
-k6 run script.js
+k6 run stap2.js
 ```
 
 Als de testrun lukt, krijg je de zogeheten "end-of-test" samenvatting.
@@ -40,7 +40,7 @@ Hoewel de informatie zeer beperkt is, zit hier toch wel nuttige info bij:
 Laten we de belasting gaan opvoeren door het aantal gebruikers te verhogen + een langere looptijd te nemen. Door de "sleep" in het script, zal er tussen de iteraties steeds 1 seconde gewacht worden.
 
 ```bash
-k6 run --vus 10 --duration 30s script.js
+k6 run --vus 10 --duration 30s stap2.js
 ```
 
 Controleer zelf nu de "end-of-test" summary, die moet als het goed is 10 vus laten zien en ~300 iteraties (10 gebruikers, 30 seconden, enkele http.get met 1 seconde sleep => 10 x 30 x 1 = 300).
@@ -67,7 +67,7 @@ export default function () {
 Run de test weer, maar geef nu geen VUs of testtijd mee:
 
 ```bash
-k6 run script.js
+k6 run stap2.js
 ```
 
 Als het goed is, loopt de test nu ook met 10 VUs en 30 seconden. 

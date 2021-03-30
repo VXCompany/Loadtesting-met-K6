@@ -6,7 +6,7 @@ Belasting is in de praktijk vrijwel nooit lineair en er zijn vaak verschillende 
 
 ## Ramping VU
 
-Ramping VU oftewel: oplopende Virtual Users. In dit patroon laten we het aantal gebruikers op "0" beginnen en gedurende een periode oplopen. Maak een nieuw bestand aan of hergebruik het script uit de vorige stap (stap5.js). We verwijderen "duration" en het aantal "vus" en nemen een blok met "stages" op.  
+Ramping VU oftewel: oplopende Virtual Users. In dit patroon laten we het aantal gebruikers op "0" beginnen en gedurende een periode oplopen. Hergebruik het script uit de vorige stap (stap5.js). We verwijderen "duration" en het aantal "vus" en nemen een blok met "stages" op. Sla dit bestand op als "stap6.js".
 
 Zorg er voor, dat het options blok de volgende configuratie bevat en vul ook hier bij de initialen je eigen waarde weer in: 
 
@@ -40,10 +40,10 @@ Vervolgens voeren wij de test uit. Je kunt dit lokaal doen en naar de K6 Cloud r
 
 ```bash
 # Lokaal draaien en rapporteren naar de cloud
-k6 run stap5.js -o cloud
+k6 run stap6.js -o cloud
 
 # In de K6 cloud uitvoeren
-k6 cloud stap5.js
+k6 cloud stap6.js
 ```
 
 Dit durt natuurlijk iets langer: 1 minuut voor de test en maximaal 30 seconden voor het netjes afbouwen aan het eind. Navigeer naar https://app.k6.io/projects/3531475 en controleer of ook deze resultaten in de app zijn verwerkt:
