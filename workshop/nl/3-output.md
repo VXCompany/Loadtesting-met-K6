@@ -2,6 +2,8 @@
 
 [Terug naar het Workshop Script](handson.md)
 
+![](/images/output1.png)
+
 In tegenstelling tot K6 zelf, is K6 Cloud een commercieel SaaS product. Je kunt de K6 Cloud gebruiken voor het visualiseren, analyseren en plannen van de testruns. Ook kun je gedistribueerd een veel grotere load toepassen dan dat je dat vanaf 1 machine kunt doen. 
 
 > De K6 Cloud draait op Amazon Web Services. Dit betekent, dat je in de praktijk deze IP adressen soms zult moeten "whitelisten" als de omgeving die getest wordt daarmee is afgeschermd.

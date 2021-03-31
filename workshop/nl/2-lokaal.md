@@ -2,6 +2,8 @@
 
 [Terug naar het Workshop Script](handson.md)
 
+![](/images/lokaal1.png)
+
 We beginnen met een simpel script. Maak lokaal een bestand aan met de volgende inhoud:
 
 ```javascript

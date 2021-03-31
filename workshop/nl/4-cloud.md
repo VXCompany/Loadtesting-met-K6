@@ -2,6 +2,8 @@
 
 [Terug naar het Workshop Script](handson.md)
 
+![](/images/cloud1.png)
+
 Om nu de testrun niet meer lokaal te draaien, maar direct vanuit de cloud hoeven we niets meer aan te passen. Het volgende commando regelt alles wat nodig is:
 
 ```bash
