@@ -27,7 +27,7 @@ Ga daarna ook vast naar https://app.k6.io en login met dezelfde gegevens. Hier z
 
 K6 Cloud werkt met projecten voor het groeperen van resultaten en testen. Speciaal voor de workshop is een project "loadtesting-met-k6" aangemaakt, maar we moeten in ons script nog vertellen welk project dat is. Dit doen we door het Project ID aan de opties toe te voegen en dit ID vind je o.a. in de interface van K6 Cloud terug. 
 
-Pas het "options" object aan. Voor onze workshop kun je deze ("3531457") waarde gebruiken en vul bij "name" je eigen initialen in, zodat we straks de verschillende resultaten kunnen zien. 
+Pas het "options" object aan. Voor onze workshop kun je deze ("3531475") waarde gebruiken en vul bij "name" je eigen initialen in, zodat we straks de verschillende resultaten kunnen zien. 
 Sla het bestand op als "stap3.js"
 
 ```javascript
