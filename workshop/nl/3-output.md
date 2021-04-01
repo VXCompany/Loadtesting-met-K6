@@ -31,8 +31,8 @@ Pas het "options" object aan. Voor onze workshop kun je deze ("3531475") waarde 
 Sla het bestand op als "stap3.js"
 
 ```javascript
-...
-
+import http from 'k6/http';
+import { sleep } from 'k6';
 
 export let options = {
   vus: 10,
@@ -51,7 +51,10 @@ export let options = {
   }
 }
 
-...
+export default function () {
+  http.get('https://relaxing-meerkat-aks.westeurope.cloudapp.azure.com');
+  sleep(1);
+}
 ```
 
 Draai nu de test, maar met de optie voor output naar de K6 Cloud:
